@@ -38,6 +38,15 @@ time. Click **More info**, then **Run anyway**. The message appears because the
 installer is not yet signed with a paid certificate. It is not a sign of a
 problem with the file.
 
+**"Install Partially Succeeded" or "An Application Control policy has blocked
+this file".** This is **Smart App Control**, a guard switched on in some new
+Windows 11 computers. It blocks programs that Microsoft does not know yet, and
+it has no "Run anyway" button. To use KP-SUTRA:
+
+1. Open **Windows Security → App & browser control → Smart App Control
+   settings**, and choose **Off**.
+2. Run the Setup file again and choose **Repair**.
+
 KP-SUTRA is installed in your own profile folder:
 `%LocalAppData%\KP-SUTRA`
 
@@ -122,6 +131,11 @@ like this:
   3. Rename the copy to **`kpdata_old.db`**.
   4. Install and open the new version. It brings your charts across by
      itself.
+
+  **Opened the new version first?** It then starts with two sample charts,
+  and your old charts are not brought across. Close KP-SUTRA, rename
+  `userdata.db` in that folder to `userdata_unused.db`, do steps 1–3, and open
+  KP-SUTRA again.
 
   Keep the old folder until you have checked your charts.
 
